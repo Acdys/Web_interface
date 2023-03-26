@@ -40,7 +40,7 @@ public class WebInterfaceTest {
     @Test
     void shouldCardApplicationTest() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Сергей");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+74956512656");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+74951265126");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button__text")).click();
         String expected = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
