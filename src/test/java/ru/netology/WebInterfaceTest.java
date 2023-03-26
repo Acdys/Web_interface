@@ -38,8 +38,8 @@ public class WebInterfaceTest {
     }
 
     @Test
-    void shouldPositiveTest() {
-        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов СЕргей");
+    void shouldCardApplicationTest() {
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Сергей");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+74956512656");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button__text")).click();
